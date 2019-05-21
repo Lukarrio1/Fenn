@@ -18,6 +18,7 @@
 
     <!-- Styles -->
 <link rel="stylesheet" href="{{asset('css/mdb.min.css')}}">
+<link rel="stylesheet" href="{{asset('css/iziToast.css')}}">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
@@ -31,6 +32,7 @@
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
 <script src="{{asset('js/mdb.min.js')}}"></script>
+<script src="{{asset('iziToast.js')}}"></script>
   <script src="{{asset('js/index.js')}}"></script>
 </body>
 </html>
