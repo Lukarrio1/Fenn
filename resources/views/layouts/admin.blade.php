@@ -8,8 +8,6 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ config('app.name', 'Laravel') }}</title>
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/semantic.min.css') }}">
-
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -36,6 +34,5 @@
 <script src="{{asset('js/mdb.min.js')}}"></script>
 <script src="{{asset('iziToast.js')}}"></script>
   <script src="{{asset('js/index.js')}}"></script>
-  <script src="{{ asset('js/semantic.min.js') }}"></script>
 </body>
 </html>
