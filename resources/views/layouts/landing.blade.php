@@ -17,12 +17,27 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="{{asset('css/mdb.min.css')}}">
+
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/reset.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ asset('css/site.css') }}">
+
+  <link rel="stylesheet" type="text/css" href="{{ asset('css/container.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ asset('css/grid.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ asset('css/header.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ asset('css/image.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ asset('css/menu.css') }}">
+
+  <link rel="stylesheet" type="text/css" href="{{ asset('css/divider.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ asset('css/segment.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ asset('css/button.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ asset('css/list.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ asset('css/icon.css') }}">
+   <link rel="stylesheet" type="text/css" href="{{ asset('css/transition.css') }}">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
     <div id="app">
-        @include('inc.nav')
+        {{-- @include('inc.nav') --}}
         <main class="py-4">
             @yield('content')
         </main>
@@ -32,5 +47,10 @@
   crossorigin="anonymous"></script>
   <script src="{{asset('js/mdb.min.js')}}"></script>
   <script src="{{asset('js/index.js')}}"></script>
+  <script src="assets/library/jquery.min.js"></script>
+  <script src="{{ asset('js/transition.js') }}"></script>
+  <script src="{{ asset('js/landing.js') }}"></script>
+
+
 </body>
 </html>
